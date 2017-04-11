@@ -1,8 +1,9 @@
 FROM microsoft/windowsservercore
-#FROM microsoft/nanoserver
 
 LABEL maintainer="tom@thingamajig.net"
 LABEL description="Windows Server Core with Chocolatey"
+
+ARG chocolateyVersion=0.10.5
 
 RUN powershell -executionpolicy bypass -command \
       # Install chocolatey ;\
