@@ -10,5 +10,4 @@ RUN powershell -executionpolicy bypass -command \
 
 RUN powershell -command "choco source list"
 	
-CMD [ "powershell" ]
-
+ENTRYPOINT ["C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe"]	
