@@ -3,7 +3,7 @@ FROM microsoft/windowsservercore
 LABEL maintainer="tom@thingamajig.net"
 LABEL description="Windows Server Core with Chocolatey"
 
-ARG chocolateyVersion=0.10.5
+ARG chocolateyVersion=0.10.4
 
 RUN powershell -executionpolicy bypass -command \
       # Install chocolatey ;\
